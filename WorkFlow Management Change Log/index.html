@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Work Flow Management – Release Notes v1.4.0</title>
+<style>
+    :root{
+        --bg:#f7f9fc;
+        --card:#ffffff;
+        --accent:#1a4b8c;
+        --muted:#6b7280;
+        --text:#111827;
+        --radius:10px;
+        --shadow: 0 6px 18px rgba(17,24,39,0.06);
+        --maxw:900px;
+        --gap:18px;
+    }
+    html,body{
+        height:100%;
+        margin:0;
+        font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(180deg, #f3f6fb 0%, var(--bg) 100%);
+        color:var(--text);
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+    }
+    .container{
+        max-width:var(--maxw);
+        margin:40px auto;
+        padding:28px;
+    }
+    header{
+        display:flex;
+        align-items:flex-start;
+        gap:16px;
+    }
+    h1{
+        margin:0;
+        font-size:28px;
+        color:var(--accent);
+        line-height:1.1;
+    }
+    .meta{
+        margin-top:8px;
+        color:var(--muted);
+        font-size:14px;
+    }
+    .card{
+        background:var(--card);
+        border-radius:var(--radius);
+        padding:20px;
+        box-shadow:var(--shadow);
+        margin-top:var(--gap);
+    }
+    h2{
+        margin:0 0 12px 0;
+        font-size:18px;
+        color:#163a5a;
+        border-left:4px solid #163a5a;
+        padding-left:10px;
+    }
+    ul { margin:0 0 0 20px; padding:0; }
+    li { margin:8px 0; font-size:15.5px; color:var(--text); }
+    .sublist { margin-top:8px; margin-left:18px; }
+    .footer {
+        margin-top:28px;
+        font-size:13px;
+        color:var(--muted);
+    }
+    @media (max-width:600px){
+        .container{ padding:18px; margin:20px; }
+        h1{ font-size:22px; }
+    }
+</style>
+</head>
+<body>
+<div class="container" role="main">
+    <header>
+        <div>
+            <h1>Work Flow Management – Release Notes</h1>
+            <div class="meta"><strong>Version:</strong> 1.4.0 &nbsp;•&nbsp; <strong>Release Date:</strong> December 2025</div>
+        </div>
+    </header>
+
+    <section class="card" aria-labelledby="fixes">
+        <h2 id="fixes">I. Fixes</h2>
+        <ul>
+            <li>Resolved an issue that caused data loss when updating the <strong>Request Source</strong> within the <strong>Service</strong> menu.</li>
+        </ul>
+    </section>
+
+    <section class="card" aria-labelledby="enhancements">
+        <h2 id="enhancements">II. Enhancements</h2>
+        <ul>
+            <li>Improved the QR code scanning capability to support scanning when the system is accessed in mobile view via a web browser.</li>
+            <li>Enhanced the presentation and consistency of data displayed in the <strong>Data Table</strong> within popup dialogs triggered after request submission, including the following refinements:
+                <ul class="sublist">
+                    <li>Separation of labels and values into clearly defined row-based formats to align with standard text display conventions.</li>
+                    <li>Introduction of collapsible and expandable data sections to improve readability and user navigation within complex datasets.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="card" aria-labelledby="newfeatures">
+        <h2 id="newfeatures">III. New Features</h2>
+        <ul>
+            <li>Implemented a confirmation prompt when a user attempts to exit the interface during the creation of a new request.</li>
+            <li>Added a new <strong>Address</strong> control type, enabling users to configure custom address structures for system usage.</li>
+            <li>Introduced the <strong>Enter Multiple Request</strong> tab within the <strong>Service</strong> menu, allowing users to create multiple requests for any supported service using a variety of range-based entry types.</li>
+            <li>Added a <strong>Batch Request</strong> configuration option under the <strong>External System</strong> section in the <strong>Service</strong> menu, enabling the setup of multiple requests originating from the WorkFlow SDK or other integrated systems.</li>
+            <li>Implemented the <strong>Inbound Create Request</strong> feature in the <strong>External Integrate</strong> menu, providing the capability to configure API endpoints for receiving and processing request-creation operations from external systems.</li>
+        </ul>
+    </section>
+
+    <div class="footer">
+        Document generated: Work Flow Management – Release Notes (v1.4.0)
+    </div>
+</div>
+</body>
+</html>
